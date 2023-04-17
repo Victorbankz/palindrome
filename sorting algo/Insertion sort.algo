@@ -1,0 +1,29 @@
+ALGORITHM Palindrome
+VAR
+    Palindrome: STRING;
+    n= str.length
+BEGIN
+   IF (n = 0)THEN
+   RETURN true
+   ELSE 
+   RETURN (n=1);
+   END_IF
+   IF (str[0] <> str[le - 1])
+   END_IF
+   Palindrome(str.slice(1, le - 1) );
+   ELSE
+   RETURN false
+END
+
+
+
+function checkPalindrome(str){
+  let le = str.length;
+  if (le === 0 || le === 1) {
+    return true;
+  }
+  if (str[0] === str[le - 1]) {
+    return checkPalindrome(str.slice(1, le - 1) );
+  }  
+  return false;
+};
